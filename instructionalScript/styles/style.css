@@ -1,0 +1,66 @@
+h1 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 900;
+    /* Black */
+    font-size: 26px;
+    text-align: left;
+    color: #3c78d8;
+    /* Color HEX */
+}
+
+h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    /* Semibold */
+    font-size: 22px;
+    text-align: center;
+    color: #3c78d8;
+    /* Color HEX */
+}
+
+p {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    /* Regular */
+    font-size: 18px;
+    text-align: justify;
+    color: #000;
+    /* Color negro */
+}
+
+
+/* Estilos para imagen de la cabecera principal */
+.grid-container {
+    display: grid;
+    place-items: center;
+    /* Centra los elementos dentro del contenedor */
+}
+
+.grid-item img {
+    max-width: 100%;
+    /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto;
+    /* Ajusta la altura automáticamente */
+}
+
+img.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar-custom {
+    background-color: #8eafc4;
+    /* Custom background color */
+}
+
+.navbar-custom .navbar-nav {
+    width: 100%;
+    justify-content: space-around;
+    /* Distribute space evenly around items */
+}
+
+.btn.btn-light {
+    color: #3c78d8; /* This will change the text color for all .btn-light elements */
+    font-family: "Nunito Sans", sans-serif;
+
+}
