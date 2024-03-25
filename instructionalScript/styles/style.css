@@ -1,66 +1,220 @@
+/* Estilos para los títulos */
 h1 {
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 900;
-    /* Black */
-    font-size: 26px;
-    text-align: left;
-    color: #3c78d8;
-    /* Color HEX */
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;/* Black */
+  font-size: 26px;
+  text-align: left;
+  color: #3c78d8;/* Color HEX */
 }
 
+/* Estilos para los subtítulos */
 h2 {
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 600;
-    /* Semibold */
-    font-size: 22px;
-    text-align: center;
-    color: #3c78d8;
-    /* Color HEX */
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;/* Semibold */
+  font-size: 22px;
+  text-align: left;
+  color: #3c78d8;/* Color HEX */
 }
 
-p {
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 400;
-    /* Regular */
-    font-size: 18px;
-    text-align: justify;
-    color: #000;
-    /* Color negro */
+/*Estilos para los textos */
+p,
+ul,
+li {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;/* Regular */
+  font-size: 18px;
+  text-align: justify;
+  color: #000;/* Color negro */
+  margin-bottom: 0; /* Elimina el margen inferior del párrafo */
 }
 
+/* Estilos para la fuente */
+.video-font {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  text-align: right;
+  color: #000; /* Color negro */
+}
+
+/*Estilos para Palabras o textos importantes */
+.important {
+  font-family: "Nunito Sans", sans-serif; /* Fuente Nunito Sans */
+  font-weight: bold; /* Negrita */
+  font-size: 18px; /* Tamaño de fuente 18px */
+  color: #0b5394; /* Color HEX #0b5394 */
+}
+
+/* Estilos para las instrucciones */
+.instruccion {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: justify;
+}
 
 /* Estilos para imagen de la cabecera principal */
 .grid-container {
-    display: grid;
-    place-items: center;
-    /* Centra los elementos dentro del contenedor */
+  display: grid;
+  place-items: center;
+  /* Centra los elementos dentro del contenedor */
 }
 
 .grid-item img {
-    max-width: 100%;
-    /* Asegura que la imagen no exceda el ancho del contenedor */
-    height: auto;
-    /* Ajusta la altura automáticamente */
+  max-width: 100%;
+  /* Asegura que la imagen no exceda el ancho del contenedor */
+  height: auto;
+  /* Ajusta la altura automáticamente */
 }
 
 img.responsive {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .navbar-custom {
-    background-color: #8eafc4;
-    /* Custom background color */
+  background-color: #8eafc4;
+  /* Custom background color */
 }
 
 .navbar-custom .navbar-nav {
-    width: 100%;
-    justify-content: space-around;
-    /* Distribute space evenly around items */
+  width: 100%;
+  justify-content: space-around;
+  /* Distribute space evenly around items */
 }
 
 .btn.btn-light {
-    color: #3c78d8; /* This will change the text color for all .btn-light elements */
-    font-family: "Nunito Sans", sans-serif;
+  color: #3c78d8; /* This will change the text color for all .btn-light elements */
+  font-family: "Nunito Sans", sans-serif;
+}
 
+.container {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.item {
+  flex: 1; /* Las columnas ocupan el mismo espacio */
+  padding: 5px;
+}
+.image {
+  display: flex;
+  justify-content: center; /* Alinea la imagen al centro */
+  align-items: center; /* Centra verticalmente la imagen */
+}
+
+/* Estilos para dispositivos de pantalla pequeña */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Cambiar a diseño de columna en pantallas pequeñas */
+  }
+
+  .item {
+    width: 100%; /* Ancho completo para cada elemento en pantallas pequeñas */
+    margin-bottom: 20px; /* Agregar espacio entre elementos */
+  }
+
+  .image {
+    order: 2; /* Cambiar el orden de la imagen para que aparezca debajo del texto */
+  }
+}
+
+.container-text > div {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: #9ed0f0; /* Color de fondo */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #ffffff; /* Cambia el color de fondo a blanco en dispositivos móviles */
+    margin: 0; /* Elimina los márgenes laterales en dispositivos móviles */
+  }
+}
+.container-main {
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Estilos para la tabla */
+.tabla-unidades {
+  margin: 0 auto;
+}
+
+/* Estilos para las unidades */
+.unidad {
+  display: inline-block;
+  margin: 5px; /* Espacio entre las unidades */
+}
+
+.unidad img {
+  max-width: 80%; /* Establece el ancho máximo de las imágenes al 100% del contenedor */
+  height: auto; /* Mantiene la relación de aspecto original */
+  margin-right: 10px;
+  cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+  transition: transform 0.3s ease; /* Agrega una transición suave al pasar el mouse sobre la imagen */
+  margin-left: 20px;
+}
+
+.unidad img:hover {
+  transform: scale(
+    1.1
+  ); /* Cambia el tamaño de la imagen al pasar el mouse sobre ella */
+}
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .tabla-unidades {
+    display: block; /* Cambia la tabla a un bloque */
+  }
+  .unidad {
+    display: block; /* Cambia las unidades a bloques */
+    margin: 0 auto; /* Centra las unidades */
+  }
+}
+
+.topic-U1 {
+  text-align: center;
+}
+
+.icono {
+  font-size: 24px; /* Tamaño del icono */
+  margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+
+
+
+/* Estilos para el icono y el texto */
+.accion {
+  display: flex; /* Utiliza flexbox para alinear elementos */
+  align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.icono {
+  font-size: 24px; /* Tamaño del icono */
+  margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+.titulo {
+  margin-right: 10px; /* Espacio a la derecha del título */
+  text-align: center; /* Centra el texto del título */
+}
+.icono {
+  font-size: 24px;
+  margin-right: 5px;
 }

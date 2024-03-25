@@ -1,0 +1,27 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust the padding as needed */
+    background-color: #8eafc4;
+    color: white; /* Adjust text color as needed */
+    box-sizing: border-box;
+}
+
+/* Ensure the container fits the screen width */
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-container > div:not(:first-child) {
+        margin-top: 10px; /* Adds space between the divs on smaller screens */
+    }
+}
