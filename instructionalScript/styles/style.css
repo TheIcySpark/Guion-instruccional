@@ -1,19 +1,19 @@
 /* Estilos para los títulos */
 h1 {
   font-family: "Nunito Sans", sans-serif;
-  font-weight: 600;/* Black */
+  font-weight: 600; /* Black */
   font-size: 26px;
   text-align: left;
-  color: #3c78d8;/* Color HEX */
+  color: #3c78d8; /* Color HEX */
 }
 
 /* Estilos para los subtítulos */
 h2 {
   font-family: "Nunito Sans", sans-serif;
-  font-weight: 500;/* Semibold */
+  font-weight: 500; /* Semibold */
   font-size: 22px;
   text-align: left;
-  color: #3c78d8;/* Color HEX */
+  color: #3c78d8; /* Color HEX */
 }
 
 /*Estilos para los textos */
@@ -21,10 +21,10 @@ p,
 ul,
 li {
   font-family: "Nunito Sans", sans-serif;
-  font-weight: 400;/* Regular */
+  font-weight: 400; /* Regular */
   font-size: 18px;
   text-align: justify;
-  color: #000;/* Color negro */
+  color: #000; /* Color negro */
   margin-bottom: 0; /* Elimina el margen inferior del párrafo */
 }
 
@@ -45,13 +45,44 @@ li {
 }
 
 /* Estilos para las instrucciones */
-.instruccion {
+.instruction {
   font-family: "Nunito Sans", sans-serif;
   font-weight: bold;
   font-size: 18px;
   text-align: justify;
 }
 
+.unidad-seleccion {
+  display: flex;
+  align-items: center;
+  padding: 10px; /* Ajusta el espaciado según sea necesario */
+}
+
+.unidad-seleccion .icono {
+  font-size: 18px; /* Tamaño del icono */
+  color: #fff; /* Color blanco */
+  background-color: #3c78d8; /* Fondo circular azul */
+  border-radius: 50%; /* Hace que el fondo sea circular */
+  width: 40px; /* Tamaño del contenedor del icono */
+  height: 40px;
+  padding: 10px; /* Espacio alrededor del icono */
+  margin-right: 10px; /* Espacio a la derecha del icono */
+}
+
+/*Linea de division*/
+.dision-line {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  height: 1px;
+  background-color: black;
+}
+
+.unit-section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
 /* Estilos para imagen de la cabecera principal */
 .grid-container {
   display: grid;
@@ -191,30 +222,23 @@ body {
   text-align: center;
 }
 
-.icono {
-  font-size: 24px; /* Tamaño del icono */
-  margin-right: 5px; /* Espacio entre el icono y el texto */
-}
-
-
-
-
-/* Estilos para el icono y el texto */
-.accion {
-  display: flex; /* Utiliza flexbox para alinear elementos */
-  align-items: center; /* Alinea verticalmente los elementos */
-}
-
-.icono {
-  font-size: 24px; /* Tamaño del icono */
-  margin-right: 5px; /* Espacio entre el icono y el texto */
-}
-
 .titulo {
   margin-right: 10px; /* Espacio a la derecha del título */
   text-align: center; /* Centra el texto del título */
 }
-.icono {
-  font-size: 24px;
-  margin-right: 5px;
+
+.play-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.bi-play {
+  color: #fff; /* Color blanco para el icono */
+  font-size: 36px; /* Tamaño del icono */
+  
+  background-color: #3c78d8; /* Fondo circular azul */
+  border-radius: 50%; /* Hace que el fondo sea circular */
+  width: 40px; /* Tamaño del contenedor del icono */
+  height: 40px;
 }
